@@ -1,0 +1,89 @@
+.App {
+
+  transition: all 0.5s ease;
+
+  .App-header {
+    width: 100%;
+    height: 55px;
+    background-color: #0198A6;
+    color: white;
+    padding: 12px;
+    font-size: 2rem;
+    display: flex;
+
+    h1 {
+      padding: 0;
+      margin: 0 10px;
+      font-size: 1.5rem;
+    }
+
+    svg {
+
+    }
+  }
+
+  nav {
+    display: block;
+    overflow: hidden;
+    background-color: white;
+    padding-bottom: 15px;
+    //height: 78px;
+  }
+
+  main {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+
+    h2 {
+      margin: 0 0 20px 0;
+      font-size: 1.2rem;
+    }
+
+    .paginationInfo {
+      float: right;
+      color: #777;
+      font-size: 0.75rem;
+    }
+
+    .pagination {
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+      }
+
+      button {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+        margin: 0 2px;
+        font-size: 0.8125rem;
+        cursor: pointer;
+
+        &.active {
+          background-color: #0198A6;
+          color: white;
+          border: 1px solid #0198A6;
+        }
+
+        &:hover:not(.active) {background-color: #f3f3f3;}
+      }
+    }
+  }
+
+  .error {
+    margin: 1px auto 0 20px;
+    color: red;
+    font-size: 0.875em;
+  }
+
+  .list-grid {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
